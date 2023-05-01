@@ -1,11 +1,12 @@
 import './App.css'
-import { Header } from './components'
+import { DatingCards, Header } from './components'
 
 function App() {
 
   return (
     <>
       <Header/>
+      <DatingCards/>
     </>
   )
 }
