@@ -1,5 +1,5 @@
 import './App.css'
-import { DatingCards, Header } from './components'
+import { DatingCards, Header, SwipeButtons } from './components'
 
 function App() {
 
@@ -7,6 +7,7 @@ function App() {
     <>
       <Header/>
       <DatingCards/>
+      <SwipeButtons/>
     </>
   )
 }
