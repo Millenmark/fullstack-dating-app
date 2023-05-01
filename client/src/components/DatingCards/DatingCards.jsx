@@ -42,7 +42,10 @@ const DatingCards = () => {
               onSwipe={(dir) => swiped(dir, person.name)}
               onCardLeftScreen={() => outOfFrame(person.name)}
             > 
-              <div style={{backgroundImage: `url('${person.imgUrl}')`}} className={style.card}>
+              <div 
+                style={{backgroundImage: `url('${person.imgUrl}')`}} 
+                className={style.card}
+              >
                 <h3>{person.name}</h3>
               </div>
             </DatingCard>
