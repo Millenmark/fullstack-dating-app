@@ -1,5 +1,6 @@
 import express from 'express'
 import mongoose from 'mongoose'
+import cors from 'cors'
 import cardsModel from './models/cardsModel.js'
 
 //App config
@@ -10,6 +11,7 @@ const connectionUrl = "mongodb+srv://millenmarkdev:0e3QZpS33qswJ3TU@cluster0.3dh
 
 //Middleware
 app.use(express.json())
+app.use(cors())
 
 //DB Config
 mongoose.connect(connectionUrl, {
